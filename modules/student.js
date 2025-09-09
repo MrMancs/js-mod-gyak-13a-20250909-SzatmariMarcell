@@ -12,6 +12,6 @@ export default class Student extends Person {
     }
 
     constructor(marks) {
-
+        this.marks = marks
     }
 }
