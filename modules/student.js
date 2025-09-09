@@ -1,5 +1,17 @@
 import Person from "./person";
 
 export default class Student extends Person {
-    marks = [5,4,5] // TODO - delete test data
+    _marks = []
+
+    get marks(){
+        return [...this._marks]
+    }
+
+    set marks(value){
+        this._marks = [...value]
+    }
+
+    constructor(marks) {
+
+    }
 }
