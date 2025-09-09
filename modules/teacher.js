@@ -1,7 +1,7 @@
 import Person from "./person";
 import Student from "./student";
 
-export default class Student extends Person {
+export default class Teacher extends Person {
     _students = []
 
     get students(){
@@ -12,7 +12,8 @@ export default class Student extends Person {
         this._students = [...value]
     }
 
-    constructor(students) {
-        this.students = students
+    constructor(options) {
+        super(options)
+        this.students = options?.students ? options.students : []
     }
 }

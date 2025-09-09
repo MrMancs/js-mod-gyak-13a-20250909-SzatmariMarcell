@@ -8,7 +8,7 @@ export default class Person {
         this._name = value
     }
 
-    constructor(name){
-        this.name = name
+    constructor(options){
+        this.name = options?.name ? options.name : "John NoName0032"
     }
 }
